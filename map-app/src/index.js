@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 require('./utils/config');
 
+// Just loads the app
 ReactDOM.render(
     <React.StrictMode>
       <App />
