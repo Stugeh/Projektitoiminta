@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-## Before this can be run you need to have run npm install in the console.
+## Before this can be run you need to have run npm install in the console. You also need to create a file called .env in the root folder. Contents of the file are stored in repo secrets.
 
 ## Available Scripts
 
