@@ -3,7 +3,7 @@ import React from 'react';
 // Component that renders the map.
 import Map from './components/Map';
 
-// Main application.
+// Main application. Calls all the components.
 const App = () => {
   return (
     <div className="container">
