@@ -3,15 +3,10 @@
 ## Before this can be run you need to have run npm install in the console. You also need to create a file called .env in the root folder. the contents of the file should be: REACT_APP_MAPS_KEY=[key here]. 
 
 
-const funktio = () => (
-  <div></div>
-) 
-
+const funktio = () => (x) 
 on sama kuin:
 const funktio = () => {
-  return (
-  <div></div>
-  ) 
+  return x
 }
 
 
