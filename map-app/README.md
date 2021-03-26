@@ -7,9 +7,7 @@ const funktio = () => (x)
 
 on sama kuin:
 const funktio = () => {
-
   return x
-  
 }
 
 
