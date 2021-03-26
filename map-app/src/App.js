@@ -6,11 +6,10 @@ import Map from './components/Map';
 import PictureCard from './components/PictureCard';
 import InfoCard from './components/InfoCard';
 
-// import PictureCard from './components/PictureCard';
 // Main application. Calls all the components.
 const App = () => {
   return (
-    <div className="container-xl" >
+    <div className="container-xl">
       <Card className='Card'>
 
         <Card.Header className="head">
