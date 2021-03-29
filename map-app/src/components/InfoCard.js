@@ -3,7 +3,7 @@ import React from 'react';
 import {Tabs, Tab} from 'react-bootstrap';
 
 const Lorem = () => (
-  <div>
+  <div className='text'>
     <br/>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Fusce placerat pulvinar quam id suscipit. Nunc erat sem,
