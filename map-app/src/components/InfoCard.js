@@ -19,7 +19,6 @@ const Lorem = () => (
 
 const InfoCard = () => (
   <div className="info">
-    <h1>Place</h1>
     <Tabs defaultActiveKey="Info" className="tabs">
       <Tab eventKey="Info" title="Info">
         <Lorem/>
