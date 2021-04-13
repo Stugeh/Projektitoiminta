@@ -6,7 +6,7 @@ import {GoogleMap, LoadScript} from '@react-google-maps/api';
 // temporary css style for the div that contains the map.
 const containerStyle = {
   width: '100%',
-  height: '94vh',
+  height: '100%',
 };
 // Coordinates for oulu
 const center = {

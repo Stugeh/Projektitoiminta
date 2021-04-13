@@ -1,6 +1,7 @@
 import './App.css';
 import React, {useState} from 'react';
-// import {Card} from 'react-bootstrap';
+import {useMediaQuery} from 'react-responsive';
+
 
 // Component that renders the map.
 import Map from './components/Map';
@@ -25,14 +26,17 @@ const Lorem = () => (
 
 // Main application. Calls all the components.
 const App = () => {
-  // eslint-disable-next-line no-unused-vars
   const [page, setPage] = useState('landing');
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-device-width: 980px)',
+  });
+  const isTabletOrMobile = useMediaQuery({query: '(max-width: 980px)'});
 
-
-  return (
-    <div className="grid-container">
-      <Nav setPage={setPage}/>
-      {page === 'app' ? (
+  if (isDesktopOrLaptop) {
+    return (
+      <div className="grid-container">
+        <Nav setPage={setPage}/>
+        {page === 'app' ? (
         <>
           <div className="placeHead">
             <h1>Name of the place</h1>
@@ -42,16 +46,24 @@ const App = () => {
           <InfoCard/>
         </>
         ): <></>
-      }
-      {page === 'landing' ? (
+        }
+
+        {page === 'landing' ? (
         <div className='introduction'>
           <h1>This is a landing page</h1>
           <Lorem />
         </div>
-      ):<></>}
-
-    </div>
-
-  );
+        ):<></>
+        }
+      </div>
+    );
+  } else if (isTabletOrMobile) {
+    return (
+      <div>
+        mobile view
+      </div>
+    );
+  }
+  return <></>;
 };
 export default App;
