@@ -4,16 +4,20 @@ import {Tabs, Tab} from 'react-bootstrap';
 
 const Lorem = () => (
   <div className='text'>
-    <br/>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Fusce placerat pulvinar quam id suscipit. Nunc erat sem,
-        mattis in massa ut, posuere consectetur sapien.
-        Aliquam pharetra odio eu bibendum dapibus.
-        Fusce sapien nisl, facilisis non rhoncus eget,
-        tempus nec eros. Donec hendrerit bibendum felis,
-        quis condimentum mi bibendum vitae.
-        Nam interdum mauris et laoreet vulputate.
-        Sed gravida ut odio luctus fringilla.
+
+    Oulun yliopisto, tämä pohjoinen alma mater,
+    on aivan loistava valinta opiskelupaikaksi.
+    Etenki se takia, että se on Oulusa.<br/>
+    Oulun yliopistossa on kaheksan tiedekuntaa
+    ja valtavasti eri oppiaineita, mikä tietenki
+    tarkottaa että kavereita riittää.
+    <br/>Yliopistolta löytyyki esimerkiksi harrasteporukoita
+    vähän joka lajiin. Oulun yliopiston toiminnot on
+    melko pitkälti yhen kampuksen alla Linnanmaalla,
+    mutta täällä on niin hyvät pyöräbaanat,
+    että kannattee ehottomasti tutkia elämää
+    myös kampuksen ulukopuolella.
+
   </div>
 );
 

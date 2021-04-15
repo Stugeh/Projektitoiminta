@@ -1,17 +1,17 @@
 import '../App.css';
 import React from 'react';
 import {Carousel} from 'react-bootstrap';
-import image from './Image-placeholder.jpg';
-import brainl from './brainlet-microwaved-brain.jpg';
+import yo1 from '../Pictures/Yliopisto.png';
+import yo2 from '../Pictures/yliopisto2.jpg';
 
 const PictureCard = () => (
   <div className="image">
     <Carousel>
       <Carousel.Item >
-        <img src={image} alt="" />
+        <img src={yo1} alt="" width='100%'/>
       </Carousel.Item>
       <Carousel.Item >
-        <img src={brainl} alt="" />
+        <img src={yo2} alt="" width='100%'/>
       </Carousel.Item>
     </Carousel>
   </div>

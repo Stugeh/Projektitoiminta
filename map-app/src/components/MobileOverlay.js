@@ -46,6 +46,7 @@ const MobileOverlay = () => {
       >
         <div className='overlayContent'>
           <DragHandleRoundedIcon style={dragIconStyle} />
+          <h2>Oulun yliopisto</h2>
           <PictureCard />
           <InfoCard />
 
