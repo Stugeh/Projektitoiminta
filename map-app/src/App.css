@@ -23,7 +23,7 @@ body{
   display: grid;
   position: absolute;
   height: 100%;
-  width: 100%;
+  width:100%;
   grid-template-columns: 0.9fr 0.8fr;
   grid-template-rows: 0.2fr 1.5fr 2fr;
   gap: 0px 5px;
@@ -31,6 +31,10 @@ body{
   "map place"
   "map image"
   "map info";
+}
+
+.grid-container .info {
+  font-size: 23px;
 }
 
 .header {
@@ -72,6 +76,7 @@ body{
 
 .info {
   grid-area: info; 
+  font-size: 14px;
 }
 
 h1{

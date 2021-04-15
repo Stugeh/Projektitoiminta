@@ -1,7 +1,7 @@
 import '../App.css';
 import React from 'react';
 import {Carousel} from 'react-bootstrap';
-import yo1 from '../Pictures/Yliopisto.png';
+import yo1 from '../Pictures/yliopisto1.png';
 import yo2 from '../Pictures/yliopisto2.jpg';
 
 const PictureCard = () => (
