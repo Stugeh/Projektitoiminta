@@ -7,6 +7,9 @@ import Map from './components/Map';
 const MobileView = () => (
   <div className='mobile-container'>
     <Map />
+    <div className='mobile-overlay'>
+
+    </div>
   </div>
 );
 
