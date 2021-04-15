@@ -10,7 +10,6 @@ const MobileOverlay = () => {
   const [drawerState, setDrawerState] = useState(false);
 
   const buttonStyle = {
-    fontSize: 'large',
     position: 'absolute',
     bottom: '3px',
     width: '50%',
@@ -18,16 +17,23 @@ const MobileOverlay = () => {
     marginRight: '25%',
   };
 
+  const dragIconStyle = {
+    fontSize: '50px',
+    width: '10%',
+    marginLeft: '45%',
+  };
+
   return (
     <div className='mobile-overlay'>
       <Button
+        style={buttonStyle}
         onClick={() => setDrawerState(true)}
         variant='contained'
         color='primary'
-        style={buttonStyle}
       >
         <DragHandleRoundedIcon />
       </Button>
+
       <SwipeableDrawer
         anchor='bottom'
         open={drawerState}
@@ -39,6 +45,7 @@ const MobileOverlay = () => {
         }}
       >
         <div className='overlayContent'>
+          <DragHandleRoundedIcon style={dragIconStyle} />
           <PictureCard />
           <InfoCard />
 
