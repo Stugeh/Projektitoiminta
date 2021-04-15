@@ -10,6 +10,16 @@ import {places} from './places';
 // Main application. Calls all the components.
 const App = () => {
   // State variable for tracking which place should be displayed
+  // These are used because state should be kept immutable.
+  // Instead of changing the attributes value ve replace it
+  // with a new attribute entirely. These State hooks make
+  // doing that very easy.
+  // the first argument is always the state variable we need
+  // and the second one is the update function used by passing it a new
+  // parameter like setActivePlace({data: "asfda", data2: 2}) for example.
+  // doing this also triggers a rerender of the component.
+  // this is why state variables that should trigger the entire app to rerender
+  // are stored here, in the topmost component that contains the entire app.
   const [activePlace, setActivePlace] = useState({});
 
   // Media queries that are used to display the correct view
@@ -27,10 +37,12 @@ const App = () => {
   // Explain it.
   //
   // * THE EFFECT HOOK *
-  // useEffect hooks are functions that run under certain conditions.
+  // useEffect hooks run functions under certain conditions.
   // the anonymous function that's the first argument runs when the attributes
   // defined inside the [] that's passed as the second argument change or
   // when the page is reloaded. When the array is empty it only runs on refresh.
+  // If you put activePlace inside the array every time you'd set it's state
+  // to something else it would run the hook and reset back to Oulu.
   //
   // * THE ARRAY FUNCTION 'filter' *
   // The filter function uses an anonymous function () => {}
@@ -38,7 +50,7 @@ const App = () => {
   // place.name === 'Oulu' it appends that object to a new list.
   // as theres only one Object with the name attribute oulu we then
   // select [0]. And set the first object of that list to be the
-  // value of activePlace by utilizing the setActivePlace. Function
+  // value of activePlace by utilizing the setActivePlace function
   // defined with const [activePlace, setActivePlace] = useState({});.
   // There are a bunch of other array methods that utilize anonymous functions
   // in a similar manner.
