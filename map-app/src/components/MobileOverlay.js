@@ -7,8 +7,9 @@ import PictureCard from './PictureCard';
 import InfoCard from './InfoCard';
 
 const MobileOverlay = () => {
+  // drawerState is false when drawer isn't visible and true when it is.
   const [drawerState, setDrawerState] = useState(false);
-
+  // style for the button that opens the overlay
   const buttonStyle = {
     position: 'absolute',
     bottom: '3px',

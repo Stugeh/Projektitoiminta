@@ -2,6 +2,8 @@ import '../App.css';
 import React from 'react';
 import {Nav, Navbar} from 'react-bootstrap';
 
+
+// not currently in use.
 const Navigation = ({setPage}) => {
   const landingPage = () => {
     setPage('landing');

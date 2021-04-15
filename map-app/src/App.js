@@ -17,8 +17,9 @@ const App = () => {
   // the first argument is always the state variable we need
   // and the second one is the update function used by passing it a new
   // parameter like setActivePlace({data: "asfda", data2: 2}) for example.
-  // doing this also triggers a rerender of the component.
-  // this is why state variables that should trigger the entire app to rerender
+  //
+  // Doing this also triggers a rerender of the component, Which is why
+  // state variables that should trigger the entire app to re-render
   // are stored here, in the topmost component that contains the entire app.
   const [activePlace, setActivePlace] = useState({});
 
@@ -65,6 +66,9 @@ const App = () => {
     setActivePlace(places.filter((place) => (place.name==='Oulu'))[0]);
   }, []);
 
+  // {x===y ? z : a} is shorthand for:
+  // if x equals y return z else return a
+  // super handy inside jsx
   return (
     <div>
       {isDesktop ?
