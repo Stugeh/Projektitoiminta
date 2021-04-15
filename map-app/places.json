@@ -16,6 +16,16 @@
                 "Montako ruokapaikkaa kampukselta löytyy? Älä jämähä yhteen, vaan testaa ne kaikki ja eti oma suosikki (vinkki: myös keskustasta löytyy hyviä!)",
                 "Eti lempireitti kotoa yliopistolle (ei tartte olla suorin!)"
             ]
+        },
+        {
+            "name": "",
+            "images": [],
+            "text": "",
+            "coordinates": {
+                "lat": 0,
+                "long": 0
+            },
+            "challenges": []
         }
     ]
 }
