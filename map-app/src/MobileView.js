@@ -1,5 +1,7 @@
 import React from 'react';
 
+import MobileOverlay from './components/MobileOverlay';
+
 import Map from './components/Map';
 // import PictureCard from './components/PictureCard';
 // import InfoCard from './components/InfoCard';
@@ -7,9 +9,7 @@ import Map from './components/Map';
 const MobileView = () => (
   <div className='mobile-container'>
     <Map />
-    <div className='mobile-overlay'>
-
-    </div>
+    <MobileOverlay/>
   </div>
 );
 

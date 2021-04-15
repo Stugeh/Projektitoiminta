@@ -1,4 +1,4 @@
-console.log(require('dotenv').config());
+require('dotenv').config();
 
 // Fetches the api key from environment variables.
 // To add your key you need to create a file
