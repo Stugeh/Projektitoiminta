@@ -1,14 +1,14 @@
 const config = require('../utils/config');
 import React from 'react';
 
-import {GoogleMap, LoadScript} from '@react-google-maps/api';
+import {GoogleMap, LoadScript, Marker} from '@react-google-maps/api';
 
 // css style for the div that contains the map.
 const containerStyle = {
   width: '100%',
   height: '100%',
 };
-// Coordinates for oulu
+// Coordinates for the center of the map
 const center = {
   lat: 65.022615,
   lng: 25.471453,
@@ -24,7 +24,7 @@ const Map = () => (
         zoom={13}
         options={{disableDefaultUI: true}}
       >
-        { /* Child components, such as markers, info windows, etc. */ }
+        <Marker position={center}/>
         <></>
       </GoogleMap>
     </LoadScript>

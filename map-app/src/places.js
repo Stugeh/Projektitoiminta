@@ -23,12 +23,42 @@ export const places = [
     ],
   },
   {
-    name: 'Oulu',
+    name: 'Kasvitieteellinen Puutarha',
     images: [],
     text: '',
     coordinates: {
-      lat: 0,
-      long: 0,
+      lat: 65.06298322512127,
+      long: 25.465259642922696,
+    },
+    challenges: [],
+  },
+  {
+    name: 'Kyykkästadion',
+    images: [],
+    text: '',
+    coordinates: {
+      lat: 65.06216898080989,
+      long: 25.465774627033518,
+    },
+    challenges: [],
+  },
+  {
+    name: 'Ainolan puisto',
+    images: [],
+    text: '',
+    coordinates: {
+      lat: 65.01895662086322,
+      long: 25.47805229819547,
+    },
+    challenges: [],
+  },
+  {
+    name: 'Tori',
+    images: [],
+    text: '',
+    coordinates: {
+      lat: 65.01338475886655,
+      long: 25.46458589634565,
     },
     challenges: [],
   },
