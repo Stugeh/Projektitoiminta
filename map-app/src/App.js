@@ -44,26 +44,8 @@ const App = () => {
   // when the page is reloaded. When the array is empty it only runs on refresh.
   // If you put activePlace inside the array every time you'd set it's state
   // to something else it would run the hook and reset back to Oulu.
-  //
-  // * THE ARRAY FUNCTION 'filter' *
-  // The filter function uses an anonymous function () => {}
-  // on each object (place) in the list places and every time
-  // place.name === 'Oulu' it appends that object to a new list.
-  // as theres only one Object with the name attribute oulu we then
-  // select [0]. And set the first object of that list to be the
-  // value of activePlace by utilizing the setActivePlace function
-  // defined with const [activePlace, setActivePlace] = useState({});.
-  // There are a bunch of other array methods that utilize anonymous functions
-  // in a similar manner.
-  // oh and (atrribute) => (attribute.x) is shorthand for
-  //
-  //        (attribute) => {
-  //           return attribute.x
-  //        }
-  //
-  // Thank you for coming to my Ted talk
   useEffect(()=>{
-    setActivePlace(places.filter((place) => (place.name==='Oulu'))[0]);
+    setActivePlace(findPlaceObjectByName(places, 'Oulu'));
   }, []);
 
   // {x===y ? z : a} is shorthand for:
@@ -75,15 +57,24 @@ const App = () => {
         <DesktopView
           activePlace={activePlace}
           setActivePlace={setActivePlace}
-        /> : <></>
+        /> : null
       }
 
       {isMobile ?
-        <MobileView/> : <></>
+        <MobileView/> : null
       }
-
     </div>
   );
+};
+
+// * THE ARRAY FUNCTION 'filter' *
+// The filter function uses an anonymous function () => {} on each object
+// (place) in the list places and every time place.name === 'Oulu' it appends
+// that object to a new list. As theres only one Object with the name attribute
+// oulu we then select [0]. And return the first object of that list There are
+// other array methods that utilize anonymous functions in a similar manner.
+const findPlaceObjectByName = (places, nameFilter) => {
+  return places.filter((place) => (place.name===nameFilter))[0];
 };
 
 export default App;

@@ -2,6 +2,7 @@ const config = require('../utils/config');
 import React from 'react';
 
 import {GoogleMap, LoadScript, Marker} from '@react-google-maps/api';
+
 import {places} from '../places';
 
 // css style for the div that contains the map.
@@ -31,7 +32,6 @@ const Map = () => (
         {places.map((place) => (
           <Marker key={place.name} position={place.coordinates}/>
         ))}
-        <></>
       </GoogleMap>
     </LoadScript>
   </div>

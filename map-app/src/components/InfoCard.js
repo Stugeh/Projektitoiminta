@@ -3,6 +3,20 @@ import React from 'react';
 import {Tabs, Tab} from 'react-bootstrap';
 // import {Paper} from '@material-ui/core';
 
+
+const InfoCard = () => (
+  <div className="info">
+    <Tabs defaultActiveKey="Info" className="tabs">
+      <Tab eventKey="Info" title="Info">
+        <Lorem/>
+      </Tab>
+      <Tab eventKey="haasteet" title="haasteet">
+        <Lorem/>
+      </Tab>
+    </Tabs>
+  </div>
+);
+
 // placeholder text
 const Lorem = () => (
   <div className='text'>
@@ -19,19 +33,6 @@ const Lorem = () => (
     että kannattee ehottomasti tutkia elämää
     myös kampuksen ulukopuolella.
 
-  </div>
-);
-
-const InfoCard = () => (
-  <div className="info">
-    <Tabs defaultActiveKey="Info" className="tabs">
-      <Tab eventKey="Info" title="Info">
-        <Lorem/>
-      </Tab>
-      <Tab eventKey="haasteet" title="haasteet">
-        <Lorem/>
-      </Tab>
-    </Tabs>
   </div>
 );
 
