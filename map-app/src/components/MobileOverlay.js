@@ -10,19 +10,6 @@ const MobileOverlay = () => {
   // drawerState is false when drawer isn't visible and true when it is.
   const [drawerState, setDrawerState] = useState(false);
   // style for the button that opens the overlay
-  const buttonStyle = {
-    position: 'absolute',
-    bottom: '3px',
-    width: '50%',
-    marginLeft: '25%',
-    marginRight: '25%',
-  };
-
-  const dragIconStyle = {
-    fontSize: '50px',
-    width: '10%',
-    marginLeft: '45%',
-  };
 
   return (
     <div className='mobile-overlay'>
@@ -55,6 +42,20 @@ const MobileOverlay = () => {
       </SwipeableDrawer>
     </div>
   );
+};
+
+const buttonStyle = {
+  position: 'absolute',
+  bottom: '3px',
+  width: '50%',
+  marginLeft: '25%',
+  marginRight: '25%',
+};
+
+const dragIconStyle = {
+  fontSize: '50px',
+  width: '10%',
+  marginLeft: '45%',
 };
 
 export default MobileOverlay;
