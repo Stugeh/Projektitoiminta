@@ -1,14 +1,24 @@
 import React, {useState, useEffect} from 'react';
 import places from '../places';
 
-const Challenges = () => {
+const Challenges = ({activePlace}) => {
   const [challenges, setChallenges] = useState([]);
 
   useEffect(()=> {
-    setChallenges(places);
+    const place = places.find((place) => {
+      place.name===activePlace.name;
+    });
+    setChallenges(place.challenges);
   }, []);
+
   return (
-    <div></div>
+    <div>
+      {challenges.map((challenge) =>(
+        <div key={challenge.text}>
+          {challenge.text}
+        </div>
+      ))}
+    </div>
   );
 };
 
