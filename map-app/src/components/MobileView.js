@@ -1,7 +1,7 @@
 import React from 'react';
 
-import MobileOverlay from './components/MobileOverlay';
-import Map from './components/Map';
+import MobileOverlay from './MobileOverlay';
+import Map from './Map';
 
 const MobileView = () => (
   <div className='mobile-container'>

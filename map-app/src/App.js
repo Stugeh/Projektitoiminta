@@ -2,8 +2,8 @@ import './App.css';
 import React, {useState, useEffect} from 'react';
 import {useMediaQuery} from 'react-responsive';
 
-import MobileView from './MobileView';
-import DesktopView from './DesktopView';
+import MobileView from './components/MobileView';
+import DesktopView from './components/DesktopView';
 
 import {places} from './places';
 

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Map from './components/Map';
-import PictureCard from './components/PictureCard';
-import InfoCard from './components/InfoCard';
+import Map from './Map';
+import PictureCard from './PictureCard';
+import InfoCard from './InfoCard';
 
 const DesktopView = () => (
   <div className="grid-container">
