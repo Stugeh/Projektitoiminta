@@ -18,7 +18,6 @@ const Lorem = () => (
     mutta täällä on niin hyvät pyöräbaanat,
     että kannattee ehottomasti tutkia elämää
     myös kampuksen ulukopuolella.
-
   </div>
 );
 

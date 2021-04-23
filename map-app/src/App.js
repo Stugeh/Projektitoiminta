@@ -45,12 +45,12 @@ const App = () => {
   // If you put activePlace inside the array every time you'd set it's state
   // to something else it would run the hook and reset back to Oulu.
   //
-  // * THE ARRAY FUNCTION 'filter' *
+  // * THE ARRAY FUNCTION 'find' *
   // The filter function uses an anonymous function () => {}
   // on each object (place) in the list places and every time
   // place.name === 'Oulu' it appends that object to a new list.
-  // as theres only one Object with the name attribute oulu we then
-  // select [0]. And set the first object of that list to be the
+  // as theres only one Object with the name attribute oulu
+  // And set the first object of that list to be the
   // value of activePlace by utilizing the setActivePlace function
   // defined with const [activePlace, setActivePlace] = useState({});.
   // There are a bunch of other array methods that utilize anonymous functions
@@ -63,7 +63,7 @@ const App = () => {
   //
   // Thank you for coming to my Ted talk
   useEffect(()=>{
-    setActivePlace(places.filter((place) => (place.name==='Oulu'))[0]);
+    setActivePlace(places.find((place) => (place.name==='Oulu')));
   }, []);
 
   // {x===y ? z : a} is shorthand for:
@@ -75,11 +75,11 @@ const App = () => {
         <DesktopView
           activePlace={activePlace}
           setActivePlace={setActivePlace}
-        /> : <></>
+        /> : null
       }
 
       {isMobile ?
-        <MobileView/> : <></>
+        <MobileView/> : null
       }
 
     </div>

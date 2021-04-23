@@ -13,8 +13,6 @@ const DesktopView = () => (
     <PictureCard />
     <InfoCard/>
   </div>
-
-
 );
 
 export default DesktopView;

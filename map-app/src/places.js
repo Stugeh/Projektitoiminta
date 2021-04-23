@@ -17,7 +17,7 @@ export const places = [
       lng: 25.466293498197658,
     },
     challenges: [
-      'Kävele lenkki koko kampuksen ympäri',
+      {text: 'Kävele lenkki koko kampuksen ympäri', done: false},
       'Montako ruokapaikkaa kampukselta löytyy? Älä jämähä yhteen, vaan testaa ne kaikki ja eti oma suosikki (vinkki: myös keskustasta löytyy hyviä!)',
       'Eti lempireitti kotoa yliopistolle (ei tartte olla suorin!)',
     ],
