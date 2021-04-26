@@ -2,7 +2,7 @@ import React from 'react';
 
 const Help = () => {
   return (
-    <div className = "map help">
+    <div className="help">
       <p>Help me use this awesome software..</p>
     </div>
 

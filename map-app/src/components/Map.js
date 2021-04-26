@@ -3,7 +3,6 @@ import React from 'react';
 
 import {GoogleMap, LoadScript, Marker} from '@react-google-maps/api';
 import {places} from '../places';
-import Help from './Help';
 
 // css style for the div that contains the map.
 const containerStyle = {
@@ -35,8 +34,6 @@ const Map = () => (
         <></>
       </GoogleMap>
     </LoadScript>
-    <Help />
-
   </div>
 );
 
