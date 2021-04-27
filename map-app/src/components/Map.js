@@ -15,8 +15,8 @@ const center = {
   lng: 25.471453,
 };
 // Map component
-const Map = () => (
-  <div className="map">
+const Map = ({activateMap}) => (
+  <div className="map" onMouseDown={activateMap}>
     <LoadScript googleMapsApiKey={config.MAP_KEY}>
       <GoogleMap
         mapContainerStyle={containerStyle}

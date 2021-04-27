@@ -1,10 +1,12 @@
 import React from 'react';
 
-const Help = () => {
+const Help = ({showHelp}) => {
   return (
-    <div className="help">
-      <p>Help me use this awesome software..</p>
-    </div>
+    <>
+      {showHelp && <div className="help">
+        <p>Help me use this awesome software..</p>
+      </div>}
+    </>
 
   );
 };
