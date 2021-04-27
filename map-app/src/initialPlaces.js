@@ -1,10 +1,10 @@
 /* eslint-disable max-len */
 
 //
-// Info about the places in the app.
+// Info about the initialPlaces in the app.
 //
 
-export const places = [
+export const initialPlaces = [
   {
     name: 'Oulun Yliopisto',
     images: [
@@ -18,9 +18,9 @@ export const places = [
     },
     // TODO make all the challenges objects like the first one.
     challenges: [
-      {text: 'Kävele lenkki koko kampuksen ympäri', done: false},
-      {text: 'Montako ruokapaikkaa kampukselta löytyy? Älä jämähä yhteen, vaan testaa ne kaikki ja eti oma suosikki (vinkki: myös keskustasta löytyy hyviä!)', done: false},
-      {text: 'Eti lempireitti kotoa yliopistolle (ei tartte olla suorin!)', done: false},
+      {text: 'Kävele lenkki koko kampuksen ympäri', isDone: false},
+      {text: 'Montako ruokapaikkaa kampukselta löytyy? Älä jämähä yhteen, vaan testaa ne kaikki ja eti oma suosikki (vinkki: myös keskustasta löytyy hyviä!)', isDone: false},
+      {text: 'Eti lempireitti kotoa yliopistolle (ei tartte olla suorin!)', isDone: false},
     ],
   },
   {

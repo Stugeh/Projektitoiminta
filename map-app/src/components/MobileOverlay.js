@@ -6,7 +6,7 @@ import DragHandleRoundedIcon from '@material-ui/icons/DragHandleRounded';
 import PictureCard from './PictureCard';
 import InfoCard from './InfoCard';
 
-const MobileOverlay = ({activePlace}) => {
+const MobileOverlay = ({activePlace, setPlaces, places}) => {
   // drawerState is false when drawer isn't visible and true when it is.
   const [drawerState, setDrawerState] = useState(false);
   // style for the button that opens the overlay
@@ -36,7 +36,11 @@ const MobileOverlay = ({activePlace}) => {
           <DragHandleRoundedIcon style={dragIconStyle} />
           <h2>Oulun yliopisto</h2>
           <PictureCard />
-          <InfoCard activePlace={activePlace}/>
+          <InfoCard
+            activePlace={activePlace}
+            setPlaces={setPlaces}
+            places={places}
+          />
 
         </div>
       </SwipeableDrawer>
