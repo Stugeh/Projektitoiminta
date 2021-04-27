@@ -31,10 +31,8 @@ const Challenges = ({activePlace}) => {
           <ListItem key={challenge.text} onClick={handleToggle(challenge)}>
             <ListItemIcon>
               <Checkbox
-                edge="start"
                 checked={checked.indexOf(challenge) !== -1}
                 tabIndex={-1}
-                disableRipple
               />
             </ListItemIcon>
             <ListItemText id={challenge.text} primary={challenge.text} />
