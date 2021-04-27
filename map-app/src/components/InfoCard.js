@@ -1,7 +1,7 @@
 import '../App.css';
 import React from 'react';
 import {Tabs, Tab} from 'react-bootstrap';
-// import {Paper} from '@material-ui/core';
+import Challenges from './Challenges';
 
 // placeholder text
 const Lorem = () => (
@@ -21,14 +21,15 @@ const Lorem = () => (
   </div>
 );
 
-const InfoCard = () => (
+const InfoCard = ({activePlace}) => (
   <div className="info">
     <Tabs defaultActiveKey="Info" className="tabs">
       <Tab eventKey="Info" title="Info">
         <Lorem/>
       </Tab>
       <Tab eventKey="haasteet" title="haasteet">
-        <Lorem/>
+        {JSON.stringify(activePlace)!=='{}' ?
+         <Challenges activePlace={activePlace}/> : null}
       </Tab>
     </Tabs>
   </div>

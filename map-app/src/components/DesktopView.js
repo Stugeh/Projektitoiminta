@@ -6,8 +6,9 @@ import Map from './Map';
 import PictureCard from './PictureCard';
 import InfoCard from './InfoCard';
 
-const DesktopView = () => {
+const DesktopView = ({activePlace}) => {
   const [showHelp, setShowHelp] = useState(true);
+
   return (
     <div className="grid-container">
       <HelpButton onButton={() => setShowHelp(!showHelp)} />
@@ -17,7 +18,7 @@ const DesktopView = () => {
       </div>
       <Map activateMap={() => setShowHelp(showHelp && !showHelp)} />
       <PictureCard />
-      <InfoCard/>
+      <InfoCard activePlace={activePlace}/>
     </div>
   );
 };
