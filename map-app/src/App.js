@@ -5,7 +5,7 @@ import {useMediaQuery} from 'react-responsive';
 import MobileView from './components/MobileView';
 import DesktopView from './components/DesktopView';
 
-import {places} from './places';
+import {initialPlaces} from './initialPlaces';
 
 // Main application. Calls all the components.
 const App = () => {
@@ -22,6 +22,7 @@ const App = () => {
   // state variables that should trigger the entire app to re-render
   // are stored here, in the topmost component that contains the entire app.
   const [activePlace, setActivePlace] = useState({});
+  const [places, setPlaces] = useState([]);
 
   // Media queries that are used to display the correct view
   const isDesktop = useMediaQuery({
@@ -47,7 +48,7 @@ const App = () => {
   //
   // * THE ARRAY FUNCTION 'find' *
   // The filter function uses an anonymous function () => {}
-  // on each object (place) in the list places and every time
+  // on each object (place) in the list initialPlaces and every time
   // place.name === 'Oulu' it appends that object to a new list.
   // as theres only one Object with the name attribute oulu
   // And set the first object of that list to be the
@@ -63,6 +64,12 @@ const App = () => {
   //
   // Thank you for coming to my Ted talk
   useEffect(()=>{
+    const placesString = window.localStorage.getItem('localStoragePlaces');
+    if (placesString) {
+      setPlaces(JSON.parse(placesString));
+    } else {
+      setPlaces(initialPlaces);
+    }
     setActivePlace(places.find((place) => (place.name==='Oulun Yliopisto')));
   }, []);
 

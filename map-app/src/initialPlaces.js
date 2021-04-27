@@ -1,10 +1,10 @@
 /* eslint-disable max-len */
 
 //
-// Info about the places in the app.
+// Info about the initialPlaces in the app.
 //
 
-export const places = [
+export const initialPlaces = [
   {
     name: 'Oulun Yliopisto',
     images: [
