@@ -65,12 +65,18 @@ const App = () => {
   // Thank you for coming to my Ted talk
   useEffect(()=>{
     const placesString = window.localStorage.getItem('localStoragePlaces');
+    const parsedObject = JSON.parse(placesString);
+
     if (placesString) {
-      setPlaces(JSON.parse(placesString));
+      setPlaces(parsedObject);
+      setActivePlace(parsedObject.find((place) => (
+        place.name==='Oulun Yliopisto')));
     } else {
       setPlaces(initialPlaces);
+      setActivePlace(initialPlaces.find((place) => (
+        place.name==='Oulun Yliopisto')));
+      window.localStorage.setItem('localStoragePlaces', JSON.stringify(places));
     }
-    setActivePlace(places.find((place) => (place.name==='Oulun Yliopisto')));
   }, []);
 
   // {x===y ? z : a} is shorthand for:
@@ -82,11 +88,17 @@ const App = () => {
         <DesktopView
           activePlace={activePlace}
           setActivePlace={setActivePlace}
+          setPlaces={setPlaces}
+          places={places}
         /> : null
       }
 
       {isMobile ?
-        <MobileView activePlace={activePlace}/> : null
+        <MobileView
+          activePlace={activePlace}
+          setPlaces={setPlaces}
+          places={places}
+        /> : null
       }
 
     </div>
