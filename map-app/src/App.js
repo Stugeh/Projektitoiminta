@@ -63,7 +63,7 @@ const App = () => {
   //
   // Thank you for coming to my Ted talk
   useEffect(()=>{
-    setActivePlace(places.find((place) => (place.name==='Oulu')));
+    setActivePlace(places.find((place) => (place.name==='Oulun Yliopisto')));
   }, []);
 
   // {x===y ? z : a} is shorthand for:
@@ -79,7 +79,7 @@ const App = () => {
       }
 
       {isMobile ?
-        <MobileView/> : null
+        <MobileView activePlace={activePlace}/> : null
       }
 
     </div>
