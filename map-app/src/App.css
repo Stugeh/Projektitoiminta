@@ -1,7 +1,5 @@
 
 body {
-  background: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
 }
 
 body{
@@ -46,7 +44,11 @@ body{
 
 .placeHeader {
   grid-area: place;
+<<<<<<< HEAD
   /* text-shadow: 8px 8px black; */
+=======
+  text-shadow: 2px 2px rgb(139, 149, 146);
+>>>>>>> origin/main
 }
 
 .map {

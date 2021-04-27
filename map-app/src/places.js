@@ -19,8 +19,8 @@ export const places = [
     // TODO make all the challenges objects like the first one.
     challenges: [
       {text: 'Kävele lenkki koko kampuksen ympäri', done: false},
-      'Montako ruokapaikkaa kampukselta löytyy? Älä jämähä yhteen, vaan testaa ne kaikki ja eti oma suosikki (vinkki: myös keskustasta löytyy hyviä!)',
-      'Eti lempireitti kotoa yliopistolle (ei tartte olla suorin!)',
+      {text: 'Montako ruokapaikkaa kampukselta löytyy? Älä jämähä yhteen, vaan testaa ne kaikki ja eti oma suosikki (vinkki: myös keskustasta löytyy hyviä!)', done: false},
+      {text: 'Eti lempireitti kotoa yliopistolle (ei tartte olla suorin!)', done: false},
     ],
   },
   {
