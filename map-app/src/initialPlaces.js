@@ -26,41 +26,57 @@ export const initialPlaces = [
   {
     name: 'Kasvitieteellinen Puutarha',
     images: [],
-    text: '',
+    text: 'Puskeeko stressi pintaan? Deadlinet paukkuu eikä pysty enää keskittymään mihinkään? Läheppä luontoon! Jos ei männikkö innosta, niin onpa onni että Oulun yliopiston välittömässä läheisyydessä on yksi maailman pohjoisimpia tieteellisiä puutarhoja, josta löytyy yli 4000 mitä mielenkiintosempaa lajia. Syksyllä on hyvä kerätä porukka koolle ja lähteä puutarhaan vaikka piknikille!',
     coordinates: {
       lat: 65.06298322512127,
       lng: 25.465259642922696,
     },
-    challenges: [],
+    challenges: [
+      {text: 'Haaste 1: Etsi puutarhasta uuvana', isDone: false},
+      {text: 'Haaste 2: Tutustu Romeoon ja Juliaan', isDone: false},
+      {text: 'Haaste 3: Hallaa puuta', isDone: false},
+    ],
   },
   {
     name: 'Kyykkästadion',
     images: [],
-    text: '',
+    text: 'Tiiäkkö nää mitä on kyykkä? Tästä ihan läheltä löytyy Kyykkästadion, jossa voi seurata tai kisailla kyykän ja Oulun kansallispelin Mölökyn parissa. Lähteekö Akka, Pappi, Hauki vai Karttu? ',
     coordinates: {
       lat: 65.06216898080989,
       lng: 25.465774627033518,
     },
-    challenges: [],
+    challenges: [
+      {text: 'Haaste 1: Käy katsomassa peli (mölökky tai kyykkä)', isDone: false},
+      {text: 'Haaste 2: Haasta kaverit mölökkyyn', isDone: false},
+      {text: 'Haaste 3: Kyykkää 15 kertaa elopainolla', isDone: false},
+    ],
   },
   {
     name: 'Ainolan puisto',
     images: [],
-    text: '',
+    text: 'Ainolan puistoon (eli Hupisaariin) kannattee tutustua jo syksyllä, jos on vielä hyviä kelejä. Se on esimerkiksi opiskelijavapun kannalta keskeinen paikka. Sieltä löytyy ihania hengailupaikkoja, joissa voi opiskella rauhassa tai viettää aikaa tutustumalla opiskelukavereihin ja kaupunkiin. Kampuksela on matkaa puistoon joku 6km, mutta pyörällä pääsee tosi hyvin, ja bussilla myös.',
     coordinates: {
       lat: 65.01895662086322,
       lng: 25.47805229819547,
     },
-    challenges: [],
+    challenges: [
+      {text: 'Haaste 1: Käy jätskillä enneku ilimat kylymenee', isDone: false},
+      {text: 'Haaste 2: Eti kesäteatteri', isDone: false},
+      {text: 'Haaste 3: Syötä sorsia (hanhi, ankka tai joutsenki käy)', isDone: false},
+    ],
   },
   {
     name: 'Tori',
     images: [],
-    text: '',
+    text: 'Torinranta on vanahaa Oulun parraimmillaan, ja se on myös monien menojen keskittymä. Kesäiltasin Torinrannan laitureilla hengaillee porukkaa ku pipua, ja voi kait siellä talavellaki käyä vaikka kahavilla. Torinranta on ihan keskustan tuntumassa, ja sieltä pääsee mukavasti jatkamaan matkaa vaikka Pikisaareen tai Kuusisaareen. Myös pääkirjasto ja teatteri on Torinrannassa.',
     coordinates: {
       lat: 65.01338475886655,
       lng: 25.46458589634565,
     },
-    challenges: [],
+    challenges: [
+      {text: 'Haaste 1: Käy haistelemassa tunnelmaa Kauppahallissa', isDone: false},
+      {text: 'Haaste 2: Käväse heittämässä kolikko kirjaston vesilähteeseen. Muista toivoa!', isDone: false},
+      {text: 'Haaste 3: Tätä ei voi missata: Käy moikkaamassa Toripolliisia!', isDone: false},
+    ],
   },
 ];
