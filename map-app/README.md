@@ -2,15 +2,6 @@
 
 ## Before this can be run you need to have run npm install in the console. You also need to create a file called .env in the root folder. the contents of the file should be: REACT_APP_MAPS_KEY=[key here]. There is a ready env file in our google drive if you dont want to go get your own key.
 
-
-const funktio = () => (x) 
-
-on sama kuin:
-const funktio = () => {
-  return x
-}
-
-
 ## Available Scripts
 
 In the project directory, you can run:
