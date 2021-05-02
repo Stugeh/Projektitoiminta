@@ -2,7 +2,7 @@ const config = require('../utils/config');
 import React from 'react';
 
 import {GoogleMap, LoadScript, Marker} from '@react-google-maps/api';
-import {places} from '../places';
+import {initialPlaces} from '../initialPlaces';
 
 // css style for the div that contains the map.
 const containerStyle = {
@@ -28,7 +28,7 @@ const Map = ({activateMap}) => (
          that iterates through an array. the property key
          is always required when you're rendering a list of
          components iteratively. It needs to be unique.*/}
-        {places.map((place) => (
+        {initialPlaces.map((place) => (
           <Marker key={place.name} position={place.coordinates}/>
         ))}
         <></>

@@ -6,7 +6,7 @@ import Map from './Map';
 import PictureCard from './PictureCard';
 import InfoCard from './InfoCard';
 
-const DesktopView = ({activePlace}) => {
+const DesktopView = ({activePlace, setPlaces, places}) => {
   const [showHelp, setShowHelp] = useState(true);
 
   return (
@@ -18,9 +18,10 @@ const DesktopView = ({activePlace}) => {
       </div>
       <Map activateMap={() => setShowHelp(showHelp && !showHelp)} />
       <PictureCard />
-      <InfoCard activePlace={activePlace}/>
+      <InfoCard activePlace={activePlace}
+        setPlaces={setPlaces}
+        places={places}/>
     </div>
   );
 };
-
 export default DesktopView;
