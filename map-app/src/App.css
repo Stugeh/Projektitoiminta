@@ -53,15 +53,16 @@ body{
 .help  {
   grid-area: map; 
   width: 300px;
-  height: 300px;
+  /* height: 300px; */
   /* position: absolute;  */
   margin: auto;
   z-index: 2;
-  border-radius: 20px;
+  border-radius: 20px; 
   background-color: #fff;
   color: black;
   padding: 12px;
-  box-shadow: 10px 10px 40px #777;
+  /* box-shadow: 10px 10px 40px #777; */
+  box-shadow: 3px 3px 20px 3px #888;
 }
 
 .btn-help {
@@ -70,7 +71,7 @@ body{
   height: 50px;
   margin: 10px 0 0 auto;
   z-index: 1;
-  color: green;
+  color: rgb(52, 153, 49);
 
 }
 
