@@ -21,6 +21,11 @@ const App = () => {
   const [activePlace, setActivePlace] = useState({});
   const [places, setPlaces] = useState([]);
 
+  // State for showing help window. We should save the state to prevent
+  // help showing every page refresh after first visit.
+  const [showHelp, setShowHelp] = useState(true);
+
+
   // Media queries that are used to display the correct view
   const isDesktop = useMediaQuery({
     query: '(min-device-width: 980px)',
@@ -77,6 +82,8 @@ const App = () => {
     <div>
       {isDesktop ?
         <DesktopView
+          showHelp = {showHelp}
+          toggleShowHelp = {() => setShowHelp(!showHelp)}
           activePlace={activePlace}
           setActivePlace={setActivePlace}
           setPlaces={setPlaces}

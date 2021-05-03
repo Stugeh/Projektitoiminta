@@ -4,8 +4,8 @@ import ProgressBar from './ProgressBar';
 import {GoogleMap, LoadScript, Marker} from '@react-google-maps/api';
 
 // Map component
-const Map = ({places, setActivePlace}) => (
-  <div className="map">
+const Map = ({places, setActivePlace, toggleShowHelp, showHelp}) => (
+  <div className="map" onMouseDown={showHelp && toggleShowHelp}>
     <ProgressBar places={places}/>
     <LoadScript googleMapsApiKey={config.MAP_KEY}>
       <GoogleMap

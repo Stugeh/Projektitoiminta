@@ -1,17 +1,25 @@
 import React from 'react';
 
+import HelpButton from './HelpButton';
+import Help from './Help';
 import Map from './Map';
 import PictureCard from './PictureCard';
 import InfoCard from './InfoCard';
 
-const DesktopView = ({activePlace, setActivePlace, setPlaces, places}) => (
+const DesktopView = ({showHelp, toggleShowHelp,
+  activePlace, setActivePlace, setPlaces, places}) => (
   <div className="grid-container">
+    <HelpButton onButton={toggleShowHelp} />
+    <Help showHelp={showHelp} />
     <div className="placeHeader">
       <h1>{activePlace.name}</h1>
     </div>
-    <Map places={places} setActivePlace = {setActivePlace}/>
+    <Map toggleShowHelp={toggleShowHelp} showHelp={showHelp} places={places}
+      setActivePlace = {setActivePlace}/>
     <PictureCard />
-    <InfoCard activePlace={activePlace} setPlaces={setPlaces} places={places}/>
+    <InfoCard activePlace={activePlace}
+      setPlaces={setPlaces}
+      places={places}/>
   </div>
 );
 
