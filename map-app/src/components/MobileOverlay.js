@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 import {SwipeableDrawer, Button} from '@material-ui/core';
 import DragHandleRoundedIcon from '@material-ui/icons/DragHandleRounded';
@@ -9,7 +9,11 @@ import InfoCard from './InfoCard';
 const MobileOverlay = ({activePlace, setPlaces, places}) => {
   // drawerState is false when drawer isn't visible and true when it is.
   const [drawerState, setDrawerState] = useState(false);
-  // style for the button that opens the overlay
+
+  // opens overlay when active place changes.
+  useEffect(()=> {
+    setDrawerState(true);
+  }, [activePlace]);
 
   return (
     <div className='mobile-overlay'>
@@ -34,7 +38,7 @@ const MobileOverlay = ({activePlace, setPlaces, places}) => {
       >
         <div className='overlayContent'>
           <DragHandleRoundedIcon style={dragIconStyle} />
-          <h2>Oulun yliopisto</h2>
+          <h2>{activePlace.name}</h2>
           <PictureCard />
           <InfoCard
             activePlace={activePlace}

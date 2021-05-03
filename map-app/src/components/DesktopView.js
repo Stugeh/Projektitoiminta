@@ -7,20 +7,20 @@ import PictureCard from './PictureCard';
 import InfoCard from './InfoCard';
 
 const DesktopView = ({showHelp, toggleShowHelp,
-  activePlace, setPlaces, places}) => {
-  return (
-    <div className="grid-container">
-      <HelpButton onButton={toggleShowHelp} />
-      <Help showHelp={showHelp} />
-      <div className="placeHeader">
-        <h1>Name of the place</h1>
-      </div>
-      <Map toggleShowHelp={toggleShowHelp} showHelp={showHelp} />
-      <PictureCard />
-      <InfoCard activePlace={activePlace}
-        setPlaces={setPlaces}
-        places={places}/>
+  activePlace, setActivePlace, setPlaces, places}) => (
+  <div className="grid-container">
+    <HelpButton onButton={toggleShowHelp} />
+    <Help showHelp={showHelp} />
+    <div className="placeHeader">
+      <h1>{activePlace.name}</h1>
     </div>
-  );
-};
+    <Map toggleShowHelp={toggleShowHelp} showHelp={showHelp} places={places}
+      setActivePlace = {setActivePlace}/>
+    <PictureCard />
+    <InfoCard activePlace={activePlace}
+      setPlaces={setPlaces}
+      places={places}/>
+  </div>
+);
+
 export default DesktopView;

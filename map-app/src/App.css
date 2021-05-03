@@ -30,6 +30,7 @@ body{
 
 .grid-container .info {
   font-size: 18px;
+  overflow-y: scroll;
 }
 
 .header {
@@ -47,7 +48,7 @@ body{
 .map {
   grid-area: map; 
   height: 100vh;
-  border-radius: 50px;
+  overflow-y: hidden;
 }
 
 .help  {
@@ -92,12 +93,6 @@ body{
 .introduction{
   grid-area: map;
   padding-left: 10px;
-}
-
-
-.info {
-  grid-area: info; 
-  font-size: 14px;
 }
 
 h1{
