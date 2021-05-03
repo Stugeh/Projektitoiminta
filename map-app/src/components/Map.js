@@ -5,7 +5,7 @@ import {GoogleMap, LoadScript, Marker} from '@react-google-maps/api';
 
 // Map component
 const Map = ({places, setActivePlace, toggleShowHelp, showHelp}) => (
-  <div className="map" onMouseDown={showHelp && toggleShowHelp}>
+  <div className="map" onMouseDown={showHelp ? toggleShowHelp : undefined}>
     <ProgressBar places={places}/>
     <LoadScript googleMapsApiKey={config.MAP_KEY}>
       <GoogleMap
