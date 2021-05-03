@@ -1,17 +1,17 @@
 import '../App.css';
 import React from 'react';
 import {Carousel} from 'react-bootstrap';
-import yo1 from '../Pictures/yliopisto1.png';
-import yo2 from '../Pictures/yliopisto2.jpg';
+const images = require.context('../../public/Pictures', true);
 
 const PictureCard = () => (
   <div className="image">
     <Carousel>
       <Carousel.Item >
-        <img src={yo1} alt="" width='100%'/>
-      </Carousel.Item>
-      <Carousel.Item >
-        <img src={yo2} alt="" width='100%'/>
+        <img
+          src={images('./yliopisto1.png').default}
+          alt="failed to load image"
+          width='100%'
+        />
       </Carousel.Item>
     </Carousel>
   </div>
