@@ -3,9 +3,9 @@ import React from 'react';
 import MobileOverlay from './MobileOverlay';
 import Map from './Map';
 
-const MobileView = ({activePlace, setPlaces, places}) => (
+const MobileView = ({activePlace, setPlaces, places, setActivePlace}) => (
   <div className='mobile-container'>
-    <Map />
+    <Map places={places} setActivePlace = {setActivePlace}/>
     <MobileOverlay
       activePlace={activePlace}
       setPlaces={setPlaces}
