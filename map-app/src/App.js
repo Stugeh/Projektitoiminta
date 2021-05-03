@@ -79,7 +79,6 @@ const App = () => {
     }
   }, []);
 
-  console.log('activePlace :>> ', activePlace);
   // {x===y ? z : a} is shorthand for:
   // if x equals y return z else return a
   // super handy inside jsx
