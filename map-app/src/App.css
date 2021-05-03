@@ -21,7 +21,7 @@ body{
   width:100%;
   grid-template-columns: 0.9fr 0.8fr;
   grid-template-rows: 0.2fr 1.5fr 2fr;
-  gap: 0px 10px;
+  gap: 0px 5px;
   grid-template-areas:
   "map place"
   "map image"
