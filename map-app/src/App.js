@@ -7,6 +7,7 @@ import DesktopView from './components/DesktopView';
 
 import {initialPlaces} from './initialPlaces';
 
+
 // Main application. Calls all the components.
 const App = () => {
   // State variable for tracking which place should be displayed
@@ -14,10 +15,6 @@ const App = () => {
   // Instead of changing the attributes value ve replace it
   // with a new attribute entirely. These State hooks make
   // doing that very easy.
-  // the first argument is always the state variable we need
-  // and the second one is the update function used by passing it a new
-  // parameter like setActivePlace({data: "asfda", data2: 2}) for example.
-  //
   // Doing this also triggers a rerender of the component, Which is why
   // state variables that should trigger the entire app to re-render
   // are stored here, in the topmost component that contains the entire app.
@@ -56,13 +53,7 @@ const App = () => {
   // defined with const [activePlace, setActivePlace] = useState({});.
   // There are a bunch of other array methods that utilize anonymous functions
   // in a similar manner.
-  // oh and (atrribute) => (attribute.x) is shorthand for
-  //
-  //        (attribute) => {
-  //           return attribute.x
-  //        }
-  //
-  // Thank you for coming to my Ted talk
+
   useEffect(()=>{
     const placesString = window.localStorage.getItem('localStoragePlaces');
     const parsedObject = JSON.parse(placesString);

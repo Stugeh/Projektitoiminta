@@ -1,11 +1,12 @@
 const config = require('../utils/config');
 import React from 'react';
-
+import ProgressBar from './ProgressBar';
 import {GoogleMap, LoadScript, Marker} from '@react-google-maps/api';
 
 // Map component
 const Map = ({places, setActivePlace}) => (
   <div className="map">
+    <ProgressBar places={places}/>
     <LoadScript googleMapsApiKey={config.MAP_KEY}>
       <GoogleMap
         mapContainerStyle={containerStyle}
