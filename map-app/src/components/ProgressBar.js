@@ -11,10 +11,11 @@ const ProgressBar = ({places}) => {
 
   return (
     <LinearProgress
-      className='progress'
+      className='map'
       variant='determinate'
       color='secondary'
       value={progress}
+      style={{height: '8px'}}
     />
   );
 };
