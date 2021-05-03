@@ -10,7 +10,7 @@ const Map = ({places, setActivePlace}) => (
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
-        zoom={13}
+        zoom={12}
         options={{disableDefaultUI: true}}
       >
         {/* .map() is another default array function,

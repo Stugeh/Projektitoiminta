@@ -9,8 +9,8 @@ import InfoCard from './InfoCard';
 const MobileOverlay = ({activePlace, setPlaces, places}) => {
   // drawerState is false when drawer isn't visible and true when it is.
   const [drawerState, setDrawerState] = useState(false);
-  // style for the button that opens the overlay
 
+  // opens overlay when active place changes.
   useEffect(()=> {
     setDrawerState(true);
   }, [activePlace]);
