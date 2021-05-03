@@ -10,7 +10,12 @@ const ProgressBar = ({places}) => {
   }, [places]);
 
   return (
-    <LinearProgress variant="determinate" value={progress} />
+    <LinearProgress
+      className='progress'
+      variant='determinate'
+      color='secondary'
+      value={progress}
+    />
   );
 };
 
