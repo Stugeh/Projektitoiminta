@@ -15,7 +15,7 @@ const PictureCard = ({activePlace}) => {
         {activePlace.images.map((image)=>(
           <Carousel.Item key={image}>
             <img
-              className='image'
+              className='imageaa'
               src={images(image).default}
               alt="failed to load image"
               width='100%'

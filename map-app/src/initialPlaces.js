@@ -77,8 +77,8 @@ export const initialPlaces = [
   {
     name: 'Tori',
     images: [
-      './toriranta_1.jpg',
-      './toriranta_2.jpg',
+      './torinranta_1.jpg',
+      './torinranta_2.jpg',
     ],
     text: 'Torinranta on vanahaa Oulun parraimmillaan, ja se on myös monien menojen keskittymä. Kesäiltasin Torinrannan laitureilla hengaillee porukkaa ku pipua, ja voi kait siellä talavellaki käyä vaikka kahavilla. Torinranta on ihan keskustan tuntumassa, ja sieltä pääsee mukavasti jatkamaan matkaa vaikka Pikisaareen tai Kuusisaareen. Myös pääkirjasto ja teatteri on Torinrannassa.',
     coordinates: {
