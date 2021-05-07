@@ -30,7 +30,23 @@ body{
 
 .grid-container .info {
   font-size: 18px;
-  overflow-y: scroll;
+  
+}
+
+.tab-content{
+  overflow-y: scroll; 
+}
+
+.grid-container .carousel {
+  grid-area: image; 
+  overflow: hidden;
+  text-align: center;
+  height: 50vh;
+}
+
+.grid-container .carousel img {
+  max-width: 110%;
+  height: 50vh;  
 }
 
 .header {
@@ -77,16 +93,6 @@ body{
 }
 
 
-.carousel {
-  grid-area: image; 
-  overflow: hidden;
-  text-align: center;
-}
-
-.carousel img {
-  height: 46vh;  
-}
-
 .introduction{
   grid-area: map;
   padding-left: 10px;
@@ -105,6 +111,23 @@ h1{
 
 .overlayContent {
   height: 98vh;
+}
+
+.overlayContent .info {
+  height: 45vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.overlayContent .carousel {
+  height:40vh;
+  overflow: hidden;
+  text-align: center;
+}
+
+.overlayContent .carousel img {
+  height:40vh;
 }
 
 .overlayContent h2{

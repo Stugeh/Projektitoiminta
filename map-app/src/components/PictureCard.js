@@ -15,7 +15,8 @@ const PictureCard = ({activePlace}) => {
       className="carousel"
       animation='slide'
       interval={8000}
-      timeout={1000}
+      timeout={650}
+      indicators={false}
       navButtonsAlwaysVisible={true}
     >
       {activePlace.images.map((image)=>(
