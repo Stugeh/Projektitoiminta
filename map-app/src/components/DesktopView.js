@@ -16,7 +16,7 @@ const DesktopView = ({showHelp, toggleShowHelp,
     </div>
     <Map toggleShowHelp={toggleShowHelp} showHelp={showHelp} places={places}
       setActivePlace = {setActivePlace}/>
-    <PictureCard />
+    <PictureCard activePlace={activePlace} />
     <InfoCard activePlace={activePlace}
       setPlaces={setPlaces}
       places={places}/>

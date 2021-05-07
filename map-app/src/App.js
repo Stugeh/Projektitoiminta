@@ -62,13 +62,13 @@ const App = () => {
   useEffect(()=>{
     const placesString = window.localStorage.getItem('localStoragePlaces');
     const parsedObject = JSON.parse(placesString);
-
-    if (placesString) {
+    if (placesString && placesString!=='[]') {
       setPlaces(parsedObject);
       setActivePlace(parsedObject.find((place) => (
         place.name==='Oulun Yliopisto')));
     } else {
       setPlaces(initialPlaces);
+      console.log('initialPlaces :>> ', initialPlaces);
       setActivePlace(initialPlaces.find((place) => (
         place.name==='Oulun Yliopisto')));
       window.localStorage.setItem('localStoragePlaces', JSON.stringify(places));
@@ -78,6 +78,7 @@ const App = () => {
   // {x===y ? z : a} is shorthand for:
   // if x equals y return z else return a
   // super handy inside jsx
+
   return (
     <div>
       {isDesktop ?

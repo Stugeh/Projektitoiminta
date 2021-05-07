@@ -39,7 +39,7 @@ const MobileOverlay = ({activePlace, setPlaces, places}) => {
         <div className='overlayContent'>
           <DragHandleRoundedIcon style={dragIconStyle} />
           <h2>{activePlace.name}</h2>
-          <PictureCard />
+          <PictureCard activePlace={activePlace}/>
           <InfoCard
             activePlace={activePlace}
             setPlaces={setPlaces}
