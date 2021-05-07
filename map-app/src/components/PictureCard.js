@@ -11,7 +11,7 @@ const PictureCard = ({activePlace}) => {
     return null;
   }
   return (
-    <Carousel className="image" animation='slide'>
+    <Carousel className="carousel" animation='slide'>
       {activePlace.images.map((image)=>(
         <img
           key={image}
