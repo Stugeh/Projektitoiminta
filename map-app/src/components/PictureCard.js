@@ -10,20 +10,16 @@ const PictureCard = ({activePlace}) => {
     return null;
   }
   return (
-    <div className="image">
-      <Carousel>
-        {activePlace.images.map((image)=>(
-          <Carousel.Item key={image}>
-            <img
-              className='imageaa'
-              src={images(image).default}
-              alt="failed to load image"
-              width='100%'
-            />
-          </Carousel.Item>
-        ))}
-      </Carousel>
-    </div>
+    <Carousel className="image">
+      {activePlace.images.map((image)=>(
+        <Carousel.Item key={image}>
+          <img
+            src={images(image).default}
+            alt="failed to load image"
+          />
+        </Carousel.Item>
+      ))}
+    </Carousel>
   );
 };
 

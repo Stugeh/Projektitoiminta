@@ -80,14 +80,11 @@ body{
 .image {
   grid-area: image; 
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  flex-shrink: 1;
-  height: 40vh;
-  object-fit: cover;   
 }
+
 .image img {
-  max-width:100%;
+  max-width: 100%;
+  width: 100%;
 }
 
 .introduction{
