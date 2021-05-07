@@ -1,6 +1,7 @@
 import '../App.css';
 import React from 'react';
-import {Carousel} from 'react-bootstrap';
+// import {Carousel} from 'react-bootstrap';
+import Carousel from 'react-material-ui-carousel';
 
 const images = require.context('../../public/Pictures', true);
 
@@ -10,14 +11,13 @@ const PictureCard = ({activePlace}) => {
     return null;
   }
   return (
-    <Carousel className="image">
+    <Carousel className="image" animation='slide'>
       {activePlace.images.map((image)=>(
-        <Carousel.Item key={image}>
-          <img
-            src={images(image).default}
-            alt="failed to load image"
-          />
-        </Carousel.Item>
+        <img
+          key={image}
+          src={images(image).default}
+          alt="failed to load image"
+        />
       ))}
     </Carousel>
   );
