@@ -64,6 +64,8 @@ const dragIconStyle = {
   fontSize: '50px',
   width: '10%',
   marginLeft: '45%',
+  marginTop: '-20px',
+  marginBottom: '-30px',
 };
 
 export default MobileOverlay;

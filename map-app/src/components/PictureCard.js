@@ -11,7 +11,13 @@ const PictureCard = ({activePlace}) => {
     return null;
   }
   return (
-    <Carousel className="carousel" animation='slide'>
+    <Carousel
+      className="carousel"
+      animation='slide'
+      interval={8000}
+      timeout={1000}
+      navButtonsAlwaysVisible={true}
+    >
       {activePlace.images.map((image)=>(
         <img
           key={image}
