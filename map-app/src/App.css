@@ -85,7 +85,6 @@ body{
 }
 
 .carousel img {
-  max-width: 100%;
   height: 40vh;
 
   
@@ -107,7 +106,9 @@ h1{
   z-index: 1;
 }
 
-.overlayContent {height: 90%;}
+.overlayContent {
+  height: 90%;
+}
 
 .overlayContent h2{
   text-align: center;
