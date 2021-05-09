@@ -32,6 +32,23 @@ body{
   font-size: 18px;
   overflow-y: scroll;
   white-space: pre-wrap; /* make use of whitespace characters in text */
+  
+}
+
+.tab-content{
+  overflow-y: scroll; 
+}
+
+.grid-container .carousel {
+  grid-area: image; 
+  overflow: hidden;
+  text-align: center;
+  height: 50vh;
+}
+
+.grid-container .carousel img {
+  max-width: 110%;
+  height: 50vh;  
 }
 
 .header {
@@ -78,19 +95,6 @@ body{
 }
 
 
-.image {
-  grid-area: image; 
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  flex-shrink: 1;
-  height: 40vh;
-  object-fit: cover;   
-}
-.image img {
-  max-width:100%;
-}
-
 .introduction{
   grid-area: map;
   padding-left: 10px;
@@ -107,7 +111,26 @@ h1{
   z-index: 1;
 }
 
-.overlayContent {height: 90%;}
+.overlayContent {
+  height: 98vh;
+}
+
+.overlayContent .info {
+  height: 45vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.overlayContent .carousel {
+  height:40vh;
+  overflow: hidden;
+  text-align: center;
+}
+
+.overlayContent .carousel img {
+  height:40vh;
+}
 
 .overlayContent h2{
   text-align: center;

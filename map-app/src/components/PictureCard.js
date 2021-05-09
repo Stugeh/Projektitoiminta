@@ -1,20 +1,33 @@
 import '../App.css';
 import React from 'react';
-import {Carousel} from 'react-bootstrap';
+// import {Carousel} from 'react-bootstrap';
+import Carousel from 'react-material-ui-carousel';
+
 const images = require.context('../../public/Pictures', true);
 
-const PictureCard = () => (
-  <div className="image">
-    <Carousel>
-      <Carousel.Item >
+
+const PictureCard = ({activePlace}) => {
+  if (!activePlace.images) {
+    return null;
+  }
+  return (
+    <Carousel
+      className="carousel"
+      animation='slide'
+      interval={8000}
+      timeout={650}
+      indicators={false}
+      navButtonsAlwaysVisible={true}
+    >
+      {activePlace.images.map((image)=>(
         <img
-          src={images('./yliopisto1.png').default}
+          key={image}
+          src={images(image).default}
           alt="failed to load image"
-          width='100%'
         />
-      </Carousel.Item>
+      ))}
     </Carousel>
-  </div>
-);
+  );
+};
 
 export default PictureCard;
