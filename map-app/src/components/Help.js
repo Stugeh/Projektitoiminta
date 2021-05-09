@@ -5,14 +5,24 @@ const Help = ({showHelp}) => {
     <>
       {showHelp && <div className="help">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
+        Hei opiskelija!
           <br /><br />
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        Tervetuloa Map-appiin!
+          <br /><br />
+        Kuten näet, edessäsi on kartta,
+        jonne on sijoitettu Oulun parhaat mestat! ;-)
+          <br /><br />
+        Lähde mukaani tutustumaan näihin upeisiin kohteisiin
+        ja suorita jännittävät haasteet.
+          <br /><br />
+        Klikkaamalla punaisia paikkamerkkejä kartalla voit selata paikkoja
+        ja pääset lukemaan kohteen kuvauksen.
+          <br /><br />
+        Haasteet-välilehdeltä
+        pääset ottamaan vastaan paikan tarjoamat jännittävät tehtävät!
+        Klikkaamalla checkboxit voit seurata etenemistäsi.
+        Jokainen klikkaus
+        saa sivun ylälaidassa olevan punaisen palkin kasvamaan.
         </p>
       </div>}
     </>
