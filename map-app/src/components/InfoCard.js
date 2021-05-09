@@ -8,7 +8,7 @@ const InfoCard = ({activePlace, setPlaces, places}) => (
   <div className="info">
     <Tabs defaultActiveKey="Info" className="tabs">
       <Tab eventKey="Info" title="Info">
-        <b>{activePlace.text}</b>
+        <p>{activePlace.text}</p>
       </Tab>
       <Tab eventKey="haasteet" title="haasteet">
         {JSON.stringify(activePlace)!=='{}' ?

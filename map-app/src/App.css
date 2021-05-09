@@ -31,7 +31,7 @@ body{
 .grid-container .info {
   font-size: 18px;
   overflow-y: scroll;
-  white-space: pre-wrap;
+  white-space: pre-wrap; /* make use of whitespace characters in text */
 }
 
 .header {
