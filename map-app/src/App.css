@@ -30,11 +30,11 @@ body{
 
 .grid-container .info {
   font-size: 18px;
-  overflow-y: scroll;
   
 }
 
 .tab-content{
+  overflow-y: scroll;
   margin: 1em;
   white-space: pre-wrap; /* make use of whitespace characters in text */
 }
