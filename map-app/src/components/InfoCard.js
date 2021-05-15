@@ -6,6 +6,9 @@ import Challenges from './Challenges';
 
 const InfoCard = ({activePlace, setPlaces, places}) => (
   <div className="info">
+    <div className="placeHeader">
+      <h1>{activePlace.name}</h1>
+    </div>
     <Tabs defaultActiveKey="Info" className="tabs">
       <Tab eventKey="Info" title="Info">
         <div>{activePlace.text}</div>
