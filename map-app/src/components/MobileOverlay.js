@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
-import {SwipeableDrawer, Button} from '@material-ui/core';
+import {Drawer, Button} from '@material-ui/core';
 import DragHandleRoundedIcon from '@material-ui/icons/DragHandleRounded';
 
 import PictureCard from './PictureCard';
@@ -26,7 +26,7 @@ const MobileOverlay = ({activePlace, setPlaces, places}) => {
         <DragHandleRoundedIcon />
       </Button>
 
-      <SwipeableDrawer
+      <Drawer
         anchor='bottom'
         open={drawerState}
         onClose={() => {
@@ -37,7 +37,10 @@ const MobileOverlay = ({activePlace, setPlaces, places}) => {
         }}
       >
         <div className='overlayContent'>
-          <DragHandleRoundedIcon style={dragIconStyle} />
+          <DragHandleRoundedIcon
+            onClick={() => setDrawerState(false)}
+            style={dragIconStyle}
+          />
           <PictureCard activePlace={activePlace}/>
           <InfoCard
             activePlace={activePlace}
@@ -46,7 +49,7 @@ const MobileOverlay = ({activePlace, setPlaces, places}) => {
           />
 
         </div>
-      </SwipeableDrawer>
+      </Drawer>
     </div>
   );
 };
