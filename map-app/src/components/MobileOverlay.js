@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react';
 
 import {Drawer, Button} from '@material-ui/core';
-import DragHandleRoundedIcon from '@material-ui/icons/DragHandleRounded';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 
 import PictureCard from './PictureCard';
 import InfoCard from './InfoCard';
@@ -23,7 +24,7 @@ const MobileOverlay = ({activePlace, setPlaces, places}) => {
         variant='contained'
         color='primary'
       >
-        <DragHandleRoundedIcon />
+        <ExpandLessIcon style={dragIconStyle}/>
       </Button>
 
       <Drawer
@@ -38,10 +39,14 @@ const MobileOverlay = ({activePlace, setPlaces, places}) => {
         touchStart={(e)=> e.muiHandled = true}
       >
         <div className='overlayContent'>
-          <DragHandleRoundedIcon
+          <Button
+            style={{width: '16%', height: '40px', marginLeft: '42%'}}
             onClick={() => setDrawerState(false)}
-            style={dragIconStyle}
-          />
+            variant='contained'
+            color='primary'
+          >
+            <ExpandMoreIcon style={dragIconStyle}/>
+          </Button>
           <PictureCard activePlace={activePlace}/>
           <InfoCard
             activePlace={activePlace}
@@ -57,16 +62,14 @@ const MobileOverlay = ({activePlace, setPlaces, places}) => {
 
 const buttonStyle = {
   position: 'absolute',
+  height: '40px',
   bottom: '3px',
-  width: '50%',
-  marginLeft: '25%',
-  marginRight: '25%',
+  width: '16%',
+  marginLeft: '42%',
 };
 
 const dragIconStyle = {
   fontSize: '50px',
-  width: '10%',
-  marginLeft: '45%',
   marginTop: '-20px',
   marginBottom: '-20px',
 };
