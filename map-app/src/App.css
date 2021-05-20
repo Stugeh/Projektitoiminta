@@ -19,6 +19,7 @@ body{
 .grid-container {
   display: grid;
   position: absolute;
+  overflow: clip;
   top: 0;
   height: 100vh;
   width:100%;
