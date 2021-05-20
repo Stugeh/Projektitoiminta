@@ -55,7 +55,7 @@ const MobileOverlay = ({activePlace, setPlaces, places}) => {
 };
 
 const buttonStyle = {
-  position: 'absolute',
+  position: 'relative',
   height: '40px',
   bottom: '3px',
   width: '16%',
