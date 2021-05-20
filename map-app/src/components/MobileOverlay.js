@@ -30,12 +30,6 @@ const MobileOverlay = ({activePlace, setPlaces, places}) => {
       <Drawer
         anchor='bottom'
         open={drawerState}
-        onClose={() => {
-          setDrawerState(false);
-        }}
-        onOpen={() => {
-          setDrawerState(true);
-        }}
         touchStart={(e)=> e.muiHandled = true}
       >
         <div className='overlayContent'>

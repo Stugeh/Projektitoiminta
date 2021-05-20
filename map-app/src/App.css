@@ -169,6 +169,11 @@ h1{
   white-space: pre-wrap; /* make use of whitespace characters in text */
 }
 
+.overlayContent .tab-content {
+  padding : 5px;
+  margin: 0;
+}
+
 .info {
   grid-area: info;
   width: 100%;
