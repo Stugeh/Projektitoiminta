@@ -28,6 +28,7 @@ export const initialPlaces = [
     images: [
       './puutarha_1.jpeg',
       './puutarha_2.jpg',
+      './puutarha_3.jpg',
     ],
     text: 'Puskeeko stressi pintaan? Deadlinet paukkuu eikä pysty enää keskittymään mihinkään? Läheppä luontoon!\n\nJos ei männikkö innosta, niin onpa onni että Oulun yliopiston välittömässä läheisyydessä on yksi maailman pohjoisimpia tieteellisiä puutarhoja, josta löytyy yli 4000 mitä mielenkiintosempaa lajia. Syksyllä on hyvä kerätä porukka koolle ja lähteä puutarhaan vaikka piknikille!',
     coordinates: {
@@ -45,6 +46,8 @@ export const initialPlaces = [
     images: [
       './kyykka_1.jpg',
       './kyykka_2.png',
+      './kyykka_3.jpg',
+      './kyykka_4.jpg',
     ],
     text: 'Tiiäkkö nää mitä on kyykkä?\n\nTästä ihan läheltä löytyy Kyykkästadion, jossa voi seurata tai kisailla kyykän ja Oulun kansallispelin Mölökyn parissa. Lähteekö Akka, Pappi, Hauki vai Karttu? ',
     coordinates: {
