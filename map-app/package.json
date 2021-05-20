@@ -16,6 +16,7 @@
     "dotenv": "^8.2.0",
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.2",
+    "react-confetti": "^6.0.1",
     "react-dom": "^17.0.1",
     "react-google-maps": "^7.3.0",
     "react-material-ui-carousel": "^2.2.6",

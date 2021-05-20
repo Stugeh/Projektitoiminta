@@ -4,7 +4,8 @@ import {useMediaQuery} from 'react-responsive';
 
 import MobileView from './components/MobileView';
 import DesktopView from './components/DesktopView';
-import ProgressBar from './components/ProgressBar';
+import ProgressBar, {getProgress} from './components/ProgressBar';
+import Reward from './components/Reward';
 
 import {initialPlaces} from './initialPlaces';
 
@@ -82,6 +83,7 @@ const App = () => {
   return (
     <div>
       <ProgressBar places={places}/>
+      {getProgress(places) === 100 ? <Reward /> : null}
       {isDesktop ?
         <DesktopView
           showHelp = {showHelp}

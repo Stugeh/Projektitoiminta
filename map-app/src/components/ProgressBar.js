@@ -20,7 +20,7 @@ const ProgressBar = ({places}) => {
   );
 };
 
-const getProgress = (places) => {
+export const getProgress = (places) => {
   let totalChallenges = 0;
   let completedChallenges = 0;
   places.forEach((place) => {
