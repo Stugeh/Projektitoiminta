@@ -69,7 +69,6 @@ const App = () => {
         place.name==='Oulun Yliopisto')));
     } else {
       setPlaces(initialPlaces);
-      console.log('initialPlaces :>> ', initialPlaces);
       setActivePlace(initialPlaces.find((place) => (
         place.name==='Oulun Yliopisto')));
       window.localStorage.setItem('localStoragePlaces', JSON.stringify(places));
