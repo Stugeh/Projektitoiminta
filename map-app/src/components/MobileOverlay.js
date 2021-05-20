@@ -35,6 +35,7 @@ const MobileOverlay = ({activePlace, setPlaces, places}) => {
         onOpen={() => {
           setDrawerState(true);
         }}
+        touchStart={(e)=> e.muiHandled = true}
       >
         <div className='overlayContent'>
           <DragHandleRoundedIcon
