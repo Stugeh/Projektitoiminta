@@ -152,7 +152,8 @@ h1{
 
 
 .info {
-  grid-area: map info;
+  grid-area: info;
+  width: 100%;
   margin: auto;
   z-index: 2;
   border-radius: 20px; 
@@ -162,7 +163,6 @@ h1{
   background-color: white;
   /* box-shadow: 10px 10px 40px #777; */
   box-shadow: 3px 3px 20px 3px #888;
-  grid-area: info-start;
 }
 
 .CarouselItem img{
