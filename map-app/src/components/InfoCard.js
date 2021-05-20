@@ -25,5 +25,4 @@ const InfoCard = ({activePlace, setPlaces, places}) => (
   </div>
 );
 
-
 export default InfoCard;

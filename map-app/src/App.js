@@ -4,9 +4,9 @@ import {useMediaQuery} from 'react-responsive';
 
 import MobileView from './components/MobileView';
 import DesktopView from './components/DesktopView';
+import ProgressBar from './components/ProgressBar';
 
 import {initialPlaces} from './initialPlaces';
-
 
 // Main application. Calls all the components.
 const App = () => {
@@ -81,6 +81,7 @@ const App = () => {
 
   return (
     <div>
+      <ProgressBar places={places}/>
       {isDesktop ?
         <DesktopView
           showHelp = {showHelp}
