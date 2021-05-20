@@ -62,6 +62,10 @@ body{
   height: 50vh;  
 }
 
+.grid-container .map{
+  width: 200%;
+}
+
 .header {
   grid-area: header;
   text-shadow: 2px 2px black;
