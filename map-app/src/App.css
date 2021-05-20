@@ -2,6 +2,7 @@
 body{
   width: 100%;
   height:1vh;
+  overflow: hidden;
   background-color:#ceeece;
 }
 
@@ -21,7 +22,7 @@ body{
   height: 100%;
   width:100%;
   grid-template-columns: 0.9fr 0.8fr;
-  grid-template-rows: 0.2fr 1.5fr 2fr;
+  grid-template-rows: 1.5fr 2fr;
   gap: 0px 5px;
   grid-template-areas:
   "map place"
@@ -31,11 +32,11 @@ body{
 
 .grid-container .info {
   font-size: 18px;
-  
+  height: 90%;
+  width: 95%;
 }
 
 .tab-content{
-  overflow-y: scroll;
   margin: 1em;
   white-space: pre-wrap; /* make use of whitespace characters in text */
 }
@@ -148,12 +149,15 @@ h1{
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 10px;
+  height:100%;
+  overflow-y:scroll;
 }
 
 
 .info {
   grid-area: info;
   width: 100%;
+  height: 100%;
   margin: auto;
   z-index: 2;
   border-radius: 20px; 
@@ -163,6 +167,7 @@ h1{
   background-color: white;
   /* box-shadow: 10px 10px 40px #777; */
   box-shadow: 3px 3px 20px 3px #888;
+  overflow: hidden;
 }
 
 .CarouselItem img{
