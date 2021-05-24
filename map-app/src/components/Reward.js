@@ -1,9 +1,18 @@
 import React from 'react';
 import Confetti from 'react-confetti';
 
-const Reward = () => {
+import {Paper, IconButton} from '@material-ui/core';
+import CloseRoundedIcon from '@material-ui/icons/CloseRounded';
+
+const Reward = ({setShowReward}) => {
   return (
-    <Confetti/>
+    <Paper className="reward">
+      <IconButton onClick={() => setShowReward(false)}>
+        <CloseRoundedIcon/>
+      </IconButton>
+      <h1>Onneksi Olkoon tuhlasit aikaa!!!</h1>
+      <Confetti/>
+    </Paper>
   );
 };
 

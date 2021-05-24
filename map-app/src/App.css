@@ -126,6 +126,32 @@ body{
   top: 150px;
 }
 
+.reward {
+  width: 96%;
+  height: 96%;
+  padding: 30% 0;
+  top:2%;
+  left:2%;
+  position: absolute;
+  text-align: center;
+  z-index: 10;
+  background-image: url('./reward.gif');  
+}
+
+.reward .MuiIconButton-root{
+  position: absolute;
+  font-size: 50px;
+  top: 0;
+  right: 0;
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.reward h1{
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
 .introduction{
   grid-area: map;
   z-index: 2;

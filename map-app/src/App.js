@@ -25,7 +25,7 @@ const App = () => {
   // State for showing help window. We should save the state to prevent
   // help showing every page refresh after first visit.
   const [showHelp, setShowHelp] = useState(true);
-
+  const [showReward, setShowReward] = useState(true);
 
   // Media queries that are used to display the correct view
   const isDesktop = useMediaQuery({
@@ -82,7 +82,11 @@ const App = () => {
   return (
     <div>
       <ProgressBar places={places}/>
-      {getProgress(places) === 100 ? <Reward /> : null}
+
+      {getProgress(places) === 100 && showReward ?
+        <Reward setShowReward={setShowReward}/> : null
+      }
+
       {isDesktop ?
         <DesktopView
           showHelp = {showHelp}
