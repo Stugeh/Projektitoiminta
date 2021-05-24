@@ -11,7 +11,7 @@ const DesktopView = ({
 }) => (
   <div className="grid-container">
     <HelpButton onButton={toggleShowHelp} />
-    <Help showHelp={showHelp} />
+    <Help showHelp={showHelp} toggleShowHelp={toggleShowHelp}/>
     <Map toggleShowHelp={toggleShowHelp} showHelp={showHelp} places={places}
       setActivePlace = {setActivePlace}/>
     <PictureCard activePlace={activePlace} />

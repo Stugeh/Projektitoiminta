@@ -23,7 +23,7 @@ const MobileOverlay = ({
   return (
     <div className='mobile-overlay'>
       <HelpButton onButton={toggleShowHelp} />
-      <Help showHelp={showHelp} />
+      <Help showHelp={showHelp} toggleShowHelp={toggleShowHelp}/>
       <Button
         style={buttonStyle}
         onClick={() => setDrawerState(true)}

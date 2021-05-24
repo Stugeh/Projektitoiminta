@@ -1,9 +1,14 @@
 import React from 'react';
 
-const Help = ({showHelp}) => {
+import {IconButton} from '@material-ui/core';
+import CloseRoundedIcon from '@material-ui/icons/CloseRounded';
+const Help = ({showHelp, toggleShowHelp}) => {
   return (
     <>
       {showHelp && <div className="help">
+        <IconButton style={{float: 'right'}} onClick={toggleShowHelp}>
+          <CloseRoundedIcon/>
+        </IconButton>
         <p>
         Hei opiskelija!
           <br /><br />
