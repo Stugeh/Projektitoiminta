@@ -55,17 +55,15 @@ const MobileOverlay = ({activePlace, setPlaces, places}) => {
 };
 
 const buttonStyle = {
-  position: 'relative',
+  position: 'fixed',
   height: '40px',
-  bottom: '50px',
+  bottom: '10px',
   width: '16%',
   marginLeft: '42%',
 };
 
 const dragIconStyle = {
   fontSize: '50px',
-  marginTop: '-20px',
-  marginBottom: '-20px',
 };
 
 export default MobileOverlay;
