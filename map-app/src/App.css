@@ -33,7 +33,7 @@ body{
 
 .progress{
   z-index: 2;
-  position: absolute;
+  position: fixed;
   top: 0;
 }
 
