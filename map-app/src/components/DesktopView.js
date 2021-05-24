@@ -6,8 +6,9 @@ import Map from './Map';
 import PictureCard from './PictureCard';
 import InfoCard from './InfoCard';
 
-const DesktopView = ({showHelp, toggleShowHelp,
-  activePlace, setActivePlace, setPlaces, places}) => (
+const DesktopView = ({
+  showHelp, toggleShowHelp, activePlace, setActivePlace, setPlaces, places,
+}) => (
   <div className="grid-container">
     <HelpButton onButton={toggleShowHelp} />
     <Help showHelp={showHelp} />

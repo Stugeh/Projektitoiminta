@@ -13,10 +13,6 @@ const Map = ({places, setActivePlace, toggleShowHelp, showHelp}) => (
         zoom={12}
         options={{disableDefaultUI: true}}
       >
-        {/* .map() is another default array function,
-         that iterates through an array. the property key
-         is always required when you're rendering a list of
-        components iteratively. It needs to be unique.*/}
         {places.map((place) => (
           <Marker
             key={place.name}

@@ -96,6 +96,8 @@ const App = () => {
 
       {isMobile ?
         <MobileView
+          showHelp = {showHelp}
+          toggleShowHelp = {() => setShowHelp(!showHelp)}
           setActivePlace={setActivePlace}
           activePlace={activePlace}
           setPlaces={setPlaces}

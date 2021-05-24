@@ -112,9 +112,23 @@ body{
 
 }
 
+.mobile-container .btn-help {
+  position: fixed !important;
+  top: 5px;
+  right: 0px;
+}
+
+.mobile-container .help {
+  position: fixed !important;
+  width:95%;
+  margin-left: 2.5%;
+  
+  top: 150px;
+}
 
 .introduction{
   grid-area: map;
+  z-index: 2;
   padding-left: 10px;
 }
 

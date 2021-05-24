@@ -6,8 +6,12 @@ import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 
 import PictureCard from './PictureCard';
 import InfoCard from './InfoCard';
+import HelpButton from './HelpButton';
+import Help from './Help';
 
-const MobileOverlay = ({activePlace, setPlaces, places}) => {
+const MobileOverlay = ({
+  activePlace, setPlaces, places, showHelp, toggleShowHelp,
+}) => {
   // drawerState is false when drawer isn't visible and true when it is.
   const [drawerState, setDrawerState] = useState(false);
 
@@ -18,6 +22,8 @@ const MobileOverlay = ({activePlace, setPlaces, places}) => {
 
   return (
     <div className='mobile-overlay'>
+      <HelpButton onButton={toggleShowHelp} />
+      <Help showHelp={showHelp} />
       <Button
         style={buttonStyle}
         onClick={() => setDrawerState(true)}
