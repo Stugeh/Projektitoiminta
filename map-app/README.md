@@ -10,7 +10,8 @@ Before this can be run you need to have run npm install in the console. You also
 In the project directory, you can run:
 
 ### `npm install --legacy-peer-deps`
-To install dependencies
+To install dependencies.
+
 If it doesn't work remove package-lock.json and node_modules before re-installing.
 
 ### `npm start`
