@@ -11,6 +11,7 @@ In the project directory, you can run:
 
 ### `npm install --legacy-peer-deps`
 To install dependencies
+If it doesn't work remove package-lock.json and node_modules before re-installing.
 
 ### `npm start`
 
