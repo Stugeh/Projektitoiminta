@@ -9,7 +9,7 @@ Before this can be run you need to have run npm install in the console. You also
 
 In the project directory, you can run:
 
-### `npm install`
+### `npm install --legacy-peer-deps`
 To install dependencies
 
 ### `npm start`
